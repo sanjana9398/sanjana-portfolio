@@ -12,7 +12,10 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header class="navbar">
 
         <div class="logo">
@@ -27,15 +30,23 @@
             <a href="#contact">Contact</a>
         </nav>
 
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            🌙
+        </button>
+
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <main>
+
+        <!-- HERO -->
 
         <section class="hero" id="home">
 
-            <!-- Left Side -->
             <div class="hero-content">
 
                 <p class="subtitle">
@@ -74,7 +85,8 @@
             </div>
 
 
-            <!-- Right Side -->
+            <!-- PROFILE IMAGE -->
+
             <div class="profile-container">
 
                 <div class="profile-circle">
@@ -89,12 +101,11 @@
         </section>
 
 
-        <!-- About -->
-        <section class="section" id="about">
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-            <div class="section-label">
-                ABOUT ME
-            </div>
+        <section class="section" id="about">
 
             <h2>
                 Cybersecurity Enthusiast
@@ -111,12 +122,11 @@
         </section>
 
 
-        <!-- Skills -->
-        <section class="section" id="skills">
+        <!-- =========================
+             SKILLS
+        ========================== -->
 
-            <div class="section-label">
-                SKILLS
-            </div>
+        <section class="section" id="skills">
 
             <h2>
                 Technical Skills
@@ -125,25 +135,31 @@
             <div class="skills">
 
                 <div>Cybersecurity</div>
+
                 <div>Network Security</div>
+
                 <div>Python</div>
+
                 <div>Machine Learning</div>
+
                 <div>Linux</div>
-                <div>HTML & CSS</div>
+
+                <div>HTML &amp; CSS</div>
+
                 <div>Flask</div>
-                <div>Git & GitHub</div>
+
+                <div>Git &amp; GitHub</div>
 
             </div>
 
         </section>
 
 
-        <!-- Projects -->
-        <section class="section" id="projects">
+        <!-- =========================
+             PROJECTS
+        ========================== -->
 
-            <div class="section-label">
-                PROJECTS
-            </div>
+        <section class="section" id="projects">
 
             <h2>
                 My Work
@@ -151,9 +167,14 @@
 
             <div class="projects">
 
+
+                <!-- PROJECT 1 -->
+
                 <div class="project-card">
 
-                    <p class="project-number">01</p>
+                    <p class="project-number">
+                        01
+                    </p>
 
                     <h3>
                         Network Traffic Analysis for Cyber Attack Classification with ML
@@ -172,9 +193,13 @@
                 </div>
 
 
+                <!-- PROJECT 2 -->
+
                 <div class="project-card">
 
-                    <p class="project-number">02</p>
+                    <p class="project-number">
+                        02
+                    </p>
 
                     <h3>
                         Online Examination System
@@ -197,12 +222,11 @@
         </section>
 
 
-        <!-- Contact -->
-        <section class="section contact" id="contact">
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <div class="section-label">
-                CONTACT
-            </div>
+        <section class="section contact" id="contact">
 
             <h2>
                 Let's Connect
@@ -215,7 +239,9 @@
 
             <a href="mailto:sanjanakhanderkar93@gmail.com"
                class="button button-dark">
+
                 Contact Me →
+
             </a>
 
         </section>
@@ -223,7 +249,10 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
@@ -231,6 +260,33 @@
         </p>
 
     </footer>
+
+
+    <!-- =========================
+         DARK MODE JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                themeToggle.textContent = "☀️";
+
+            } else {
+
+                themeToggle.textContent = "🌙";
+
+            }
+
+        });
+
+    </script>
 
 </body>
 
